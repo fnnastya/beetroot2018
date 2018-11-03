@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .1s ease-in; /*transition: transition-property,...конкрет св-ва и не использ для всех*/
+    box-sizing: border-box
+}
+
+html,
+body,
+main {
+      height: 100%;
+}
+
+body {
+    background: #2B81AC;
+    font: 12px, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 10px 10px 10px 10px;
+    color: white;
+}
+
+header,
+footer {
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 0 20%;
+
+}
+
+main {
+    background: #3399CC;
+/*    margin: 0 auto 10%;*/
+    height: 100%;
+}
+
+.cities {
+    text-align: center;
+/*    padding: 6px;*/
+    font-size: 0;
+/*    background: white;
+    border: 1px solid white;*/
+    height: 70%;
+    width: 60%;
+    margin: 0 30% 0 20%;
+}
+
+.cities li {
+    display: inline-block;
+    font-size: 24px;
+    border: 1px solid white;
+    height: 25%;
+    padding: 5%;
+    box-sizing: border-box;
+
+}
+
+div {color: rgba(255, 255, 255, 0.3) /* white color with 30% opacity */
+
+}
+
+.cities:hover > li{
+    opacity: 0.7;
+}
+
+.cities li:hover {
+    opacity: 1;
+}
+
+.Lisabon {
+    width: 50%;
+    line-height: 0,5em;
+    background: #3399CC;
+
+}
+
+.Paris {
+    width: 25%;
+    line-height: 0,5em;
+    background: #33CCCC;
+
+}
+.Belgrade {
+    width: 25%;
+    line-height: 0,5em;
+    background: #996699;
+
+}
+
+.Moscov {
+    width: 25%;
+    line-height: 0,5em;
+    background: #C24747;
+
+}
+
+.Tel_Aviv {
+    width: 25%;
+    line-height: 0,5em;
+    background: #E2674A;
+
+}
+
+.Cair {
+    width: 25%;
+    line-height: 0,5em;
+    background: #FFCC66;
+
+}
+
+.New_Your {
+    width: 25%;
+    line-height: 0,5em;
+    background: #99CC99;
+
+}
+
+.New_Delhi {
+    width: 25%;
+    line-height: 0,5em;
+    background: #669999;
+
+}
+
+.San_Francisco {
+    width: 50%;
+    line-height: 0,5em;
+    background: #CC6699;
+
+}
+
+.Tokyo {
+    width: 25%;
+    line-height: 0,5em;
+    background: #339966;
+
+}
+
+.Sydney {
+    width: 100%;
+    line-height: 0,5em;
+    background: #666699;
+
+}
+

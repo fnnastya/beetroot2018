@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .1s ease-in; /*transition: transition-property,...конкрет св-ва и не использ для всех*/
+}
+
+html,
+body,
+main {
+      height: 100%;
+}
+
+body {color: wight;
+     /*font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;*/
+     background: #FFFFFF;
+     font: 14px, Arial, Helvetica, sans-serif; /* font: 14px/2, Arial, Helvetica, sans-serif;*/
+     margin: 20px 20px 20px 20px; /* Отступы вокруг блока */
+/*     line-height: 14px;/*высота строки*/
+}
+
+.header-text {background: #4A4F56;
+        text-align: center;
+        color: #EB7E7F;
+        padding: 15px;/*5em от font-size*/
+        border: none;
+/*        line-height: 0,5em;/*высота строки от font-size*/
+}
+
+main {background: #3B3F45;
+      padding: 20px 20px;
+
+}
+.centercol { 
+/*     position: relative;  Относительное позиционирование */
+     background: #3B3F45; /* Цвет фона */
+     padding: 10px; /* Поля вокруг текста */
+     color: white; /* Цвет текста */
+     margin: 0 340px 0 340px; /* Отступы вокруг блока */
+/*     width: 30%;*/
+    }
+
+/*form{
+    margin: 10px 20%;
+}*/
+
+label {
+    display: block;
+    padding: 10px 10px;
+    background: #88839E;
+}
+
+/*input[type="checkbox"] {
+    background: #88839E;
+}*/
+
+label:nth-child(even) {
+    background: #7A7593;/*odd*/
+}
+
+span+span {
+    font-size: 10px;
+}
+
+span+span:before {content: '(';
+}
+
+span+span:after {content: ')';
+}
+
+label:hover {
+    background: #625E78;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; /*#5F6174*/
+}
+
+label:active {
+    background: #EC887B;
+}
+
+/*input:checked {
+
+};*/
+
+input:checked+span {
+    text-decoration: line-through;
+}
+/*input[type="submit"] {
+
+}
+input[type="submit"] {
+    display: block;
+    background: #4A4F56;
+    text-align: center;
+    color: #EB7E7F;
+    padding: 15px;
+    border: none;
+}
+
+input[type="checkbox"]{
+    transform: scale(1);
+}*/

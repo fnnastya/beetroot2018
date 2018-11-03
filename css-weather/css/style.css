@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .1s ease-in; /*transition: transition-property,...конкрет св-ва и не использ для всех*/
+}
+
+html,
+body,
+main {
+      height: 100%;
+}
+
+body {
+    background: #2B81AC;
+    font: 12px, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 10px 10px 10px 10px;
+    color: white;
+}
+
+header,
+footer {
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 0 20%;
+
+}
+
+main {
+    background: #3399CC;
+/*    margin: 0 auto 10%;*/
+    height: 100%;
+}
+
+.cities {
+
+    text-align: center;
+    font-size: 0;
+    height: 70%;
+    width: 60%;
+/*    margin: 0 30% 0 20%;*/
+}
+
+
+
+.cities li {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-content: center;
+    font-size: 24px;
+    border: 1px solid white;
+/*    height: 25%;
+    padding: 5%;
+    box-sizing: border-box;
+    flex: 1 100%;
+}
+
+}
+
+div {color: rgba(255, 255, 255, 0.3) /* white color with 30% opacity */
+
+}
+
+
+.Lisabon {
+    flex: 1 80%;
+    order: 1;
+    line-height: 0,5em;
+    background: #3399CC;
+
+}
+.Paris {
+    flex: 1 25%;
+    order: 1;
+    line-height: 0,5em;
+    background: #33CCCC;
+
+}
+.Belgrade {
+    flex: 1 25%;
+    order: 1;
+    line-height: 0,5em;
+    background: #996699;
+
+}
+
+.Moscov {
+    flex: 1 25%;
+    order: 2;
+    line-height: 0,5em;
+    background: #C24747;
+
+}
+
+.Tel_Aviv {
+    flex: 1 25%;
+    order: 2;
+    line-height: 0,5em;
+    background: #E2674A;
+
+}
+
+.Cair {
+    flex: 1 25%;
+    order: 2;
+    line-height: 0,5em;
+    background: #FFCC66;
+
+}
+
+.New_Your {
+    flex: 1 25%;
+    order: 2;
+    line-height: 0,5em;
+    background: #99CC99;
+
+}
+
+.New_Delhi {
+    flex: 1 25%;
+    order: 2;
+    line-height: 0,5em;
+    background: #669999;
+
+}
+
+.San_Francisco {
+    flex: 1 50%;
+    order: 9;
+    line-height: 0,5em;
+    background: #CC6699;
+
+}
+
+.Tokyo {
+    flex: 1 25%;
+    order: 10;
+    line-height: 0,5em;
+    background: #339966;
+
+}
+
+.Sydney {
+    flex: 1 100%;
+    order: 11;
+    line-height: 0,5em;
+    background: #666699;
+
+}
+
+.cities:hover {
+    opacity: 0.7;
+}
+
+.cities li:hover {
+    opacity: 1;
+}
+
+*/

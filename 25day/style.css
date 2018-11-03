@@ -1,0 +1,59 @@
+body {
+    background: #F6F6F6;
+/*    background: linear-gradient(#F6F6F6, #9198e5)*/
+}
+
+main {
+    margin: 190px 150px 150px 150px;
+    background: #FFFFFF;
+   /* text-shadow: 1px 1px 2px #F6F6F6;*/
+    box-shadow: 1px 1px 3px;
+    padding: 40px 60px 40px 60px;
+}
+/*    background: linear-gradient(#F6F6F6, #9198e5);*/
+
+
+.title {font-size: 42px;
+    font-family: 'playfair', serif; 
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+}
+
+.general:first-letter {
+    font-family:  'Playfair Display', serif;
+    font-size: 400%;
+    color: #000;
+    float: left;
+    line-height: 30px;
+   }
+
+.general {font-size: 18px;
+    font-family: 'lato', sans-serif;
+    font-style: normal;
+    color: grey;
+    font-weight: lighter;
+    margin: 30px;
+    text-align: left; 
+    white-space: pre-wrap;
+    line-height: 34px;
+}
+
+.last {font-style: italic;
+    font-size: 24px;
+    font-family: 'lato', sans-serif;
+    font-style: italic;
+    color: grey;
+    line-height: 34px;
+    white-space: pre-wrap;
+    margin: 34px;
+}
+
+/*.afte::before*/
+
+.afte {
+    text-transform: uppercase;
+    font-size: 24px/6px;
+    color: orange;
+    white-space: pre-wrap;
+}
