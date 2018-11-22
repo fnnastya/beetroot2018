@@ -1,0 +1,255 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(90deg, #663d97,#ac71af);
+	box-sizing: border-box;
+}
+body::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg_tt.png);
+	opacity: .2;
+	background-size: cover;
+	top: 0;
+
+}
+
+/*-----------------------*/
+
+.header_inner {
+	width: 750px;
+	height: 107px;
+	padding-top: 30px;/* remove */
+	margin: auto;
+}
+
+.header_navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	z-index: 2;
+}
+
+.header_menu {
+	font-size:300 12px;
+	text-transform: uppercase;
+}
+
+.header_menu-item {
+	margin-right: 50px;
+	}
+
+.header_link {
+	color: white;
+	text-decoration: none;
+}
+
+.header_link:hover { 
+	text-decoration: underline; 
+}
+
+
+/*-----------------------------*/
+
+.main {
+	width: 750px;
+	height: 430px; /* todo remove*/
+	background: white;
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+	box-shadow: -20px 0px 0px -10px rgba(255,255,255,.3),
+				-40px 0px 0px -20px rgba(255,255,255,.3),
+				 20px 0px 0px -10px rgba(255,255,255,.3),
+				 40px 0px 0px -20px rgba(255,255,255,.3);
+	display: flex;
+}
+
+.main_photo {
+	width: 500px;
+	background: linear-gradient(#edeaec,#f4f4f4 95px);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.main_photo::after {
+	content: '';
+	width: 450px; /*? 100% padding*/
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/bg_star.png);
+	background-position: center top 10%;
+	background-repeat: no-repeat;
+
+}
+
+.main_Huarache {
+	font-size: 70px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bolder;
+	position: absolute;
+	margin-top:50px;
+	margin-left: -45px;
+	z-index: 2;
+}
+
+.photo_photo {
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 3;
+}
+
+.photo_thumbnails {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-item {
+	background: white;
+	width: 44px;
+	height: 46px;
+	transition: transform .2s;
+	margin: 10px;
+}
+
+.menu-item::hover .photo_item { /*code pen */
+	transform: scale(1.1);
+	transition: transform 1s;
+}
+
+
+/*-----------------------------*/
+
+
+.main_info {
+	width: 250px;
+}
+
+.info_close {
+	position: relative;
+	left: 220px;
+}
+
+.main_info{
+	padding: 10px 30px;
+}
+
+.main_description {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.info_new { 
+	width: 45px;
+	line-height: 25px;
+	font-size:400 14px;
+	text-transform: uppercase;
+	background: #fea60e;
+	color: white;
+	text-align: center;
+	margin: 20px 0 5px 0;
+}
+
+.info_title {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 5px 0 10px 0;
+	color: black;
+}
+
+.info_title_color {
+	color: #5e4fff;
+}
+
+.info_popular{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: 10px 0 10px 0;
+}
+
+.info_Huarache {
+	font-size: 12px;
+	font-weight: bolder;
+	line-height: 24px;
+	padding-right: 15px;
+}
+
+.info_starbar {
+	font-size: 12px;
+    line-height: 24px;
+    color: gray;
+}
+
+.info_starbar {
+  direction: rtl;
+}
+
+.fa-star:hover ~ .fa-star,
+.fa-star:hover {
+  color: yellow;
+}
+
+.info_price {
+	font-size: 22px;
+	margin: 10px 0 15px 0;
+}
+
+.info_text {
+	font-size:400 12px;
+	margin: 15px 0 6px 0;
+}
+
+.info_size {
+	display: flex;
+	justify-content: space-between;
+	width: 230px;
+	font-size: 14px;
+	/*line-height: */
+	margin: 6px 0 20px 0;
+}
+
+.info_number:hover {
+	border: 1px solid black;
+	width: 24px;
+	line-height: 24px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.main_butonn{
+	margin: 20px 0 20px 0;
+}
+
+.info_butonn {
+	width: 120px;
+	height: 30px;
+	background: #a200b8;
+	color: white;
+	border: 1px solid #a200b8;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 2px;
+
+}
+
+.info_butonn__wishlist {
+	background: none;
+	color: black;
+	border: 1px solid black;
+}
+
+
+
+
+

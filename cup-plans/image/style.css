@@ -1,0 +1,24 @@
+body {	background: #fdde7e;
+
+}
+.content {display: flex;;
+	margin: 50px 15px;
+	justify-content: center;
+	align-items:center;
+}
+
+.card {
+	width: 360px;
+	height: 440px;
+	background: white;
+	margin:0 15px;
+	flex-shrink: 0; /*что б не уменьшался при сжатии*/
+	border-radius: 3px;
+	box-shadow: 3px 0px 7px rgba (0,0,0,0.2)
+
+
+}
+
+.card__active {
+	height: 500px;
+}
