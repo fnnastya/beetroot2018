@@ -1,0 +1,32 @@
+.h2 {
+	font:500 44px @fontGotham;
+	color: @color;
+	text-transform: uppercase;
+	margin:0;
+
+}
+
+.h2__color {
+	color: @colorGeneral;
+}
+
+.h2__modifier {
+		color: @colorGeneral;
+		&::before {
+		content:'';
+		border-bottom: 2px solid @colorGeneral;
+		width: 100px;
+		height: 10px;
+		position: absolute;
+		left: calc(50% + 50px);
+		margin: -40px -100px;
+		color: @colorGeneral;
+		}
+}
+
+.h2__modifier-color {
+		color: #ffffff;
+		&::before {
+			border-bottom: 2px solid #ffffff;
+		}
+		}

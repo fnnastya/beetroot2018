@@ -1,0 +1,18 @@
+.project-h2 {
+	font:700 44px @fontGotham;
+	color: @colorGeneral;
+	text-transform: uppercase;
+	margin:0;
+}
+
+.project-h2__modifier {
+		&::before {
+		content:'';
+		border-bottom: 2px solid @colorGeneral;
+		width: 100px;
+		height: 10px;
+		position: absolute;
+		left: 50%;
+		margin: -40px -100px;
+	}
+}
