@@ -1,0 +1,12 @@
+mixin reviews 
+      h2.h2.h2__invert What Our Clients say
+        .reviews-slider
+            each item in reviewsItem 
+              .reviews_slider
+                .reviews
+                  img.reviews_img(src=item.img, alt='')
+                  .reviews_text
+                    p=item.text
+                    br
+                    p=item.name
+                    p=item.position

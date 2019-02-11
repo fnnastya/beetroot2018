@@ -1,0 +1,46 @@
+.aside {
+   color: @colorText;
+   &_header {
+      font: 700 24px @fontPlay;
+      margin: 0;
+      padding: 10px 0 30px;
+   }
+   &_searching{
+      display: flex;
+      margin-bottom: 30px;
+   }
+   &_input{
+      width: 280px;
+      background: #ebebeb;
+      border: none;
+      padding: 13px 10px;
+      &::placeholder{
+         font: 300 14px/14px @fontOpenSans;
+         font-style: italic;
+      }
+   }
+   &_search{
+      width: 60px; 
+      border: none;
+      background: #ebebeb;
+   }
+   &_post {
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center;
+   }
+   &_text {
+      text-decoration: none;
+      color: @colorText;
+   }
+   &_img {
+      margin-right: 15px;
+      width: 80px;
+      height: 80px;
+      &__post {
+         width: 164px;
+         height: 164px;
+         margin-right: 30px;
+      }
+   }
+}

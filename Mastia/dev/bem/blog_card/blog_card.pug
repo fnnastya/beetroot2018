@@ -1,0 +1,20 @@
+mixin blog_card 
+  each news in blogNews
+    .card
+     .card_img
+       img(src=news.img, alt='')
+       .card_date DATE 
+         p=news.date
+     h3.card_header=news.header
+     .card_text !{news.text.substr(0,384)} […]
+          form.card_button(method='get', action='full-news.html')
+            button.button(type='submit') READ MORE
+
+mixin blog_card__full
+    .card
+     .card_img
+       img(src=blogNews[0].img, alt='')
+       .card_date DATE 
+          p=blogNews[0].date
+     h3.card_header=blogNews[0].header
+     .card_text !{blogNews[0].text}

@@ -1,0 +1,47 @@
+
+include ../data/services
+include ../data/team
+include ../data/ability
+include ../data/reviews
+include ../data/footer
+
+include ../bem/ability/ability
+include ../bem/team/team
+include ../bem/footer/footer
+include ../bem/service/service
+include ../bem/reviews/reviews
+include ../bem/header/header
+include ../bem/page_title/page_title
+
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title about-us
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='dev/style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick-theme.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(type='text/javascript', src='dev/slick/slick/slick.min.js')
+    script(src='dest/js/slider.js')
+    script(src='dest/js/link.js')
+    script(src='dest/js/page.js')
+    script(src='dest/js/dropdown.js')
+  body
+  +header
+  +page_title('about us')
+  +abilityWho
+  .layout.service.service__about
+    .layout_section
+        .layout_row
+          +service_about
+  +abilityWhatWeDo
+  .layout.service.service__about
+    .layout_section
+        +reviews 
+  +team
+  +footer

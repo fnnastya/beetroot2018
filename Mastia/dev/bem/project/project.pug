@@ -1,0 +1,13 @@
+mixin _project(item)
+    .layout_col-3
+        .project_zoom
+            img.project_photo(src=item.img, alt='')
+mixin project(rowNeeded,colNeeded)
+    - var col = 0;
+    - var row = 0;
+    while row < rowNeeded
+        .layout_row
+            while col < (row + 1) * colNeeded
+                +_project(projectsItems[col])
+                - col++;
+        - row++;

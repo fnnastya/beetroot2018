@@ -1,0 +1,63 @@
+include ../data/services
+include ../data/projects
+include ../data/counts
+include ../data/hblog
+include ../data/footer
+include ../data/projects
+
+include ../bem/service/service
+include ../bem/project/project
+include ../bem/count/count
+include ../bem/blog/blog
+include ../bem/header/header
+include ../bem/footer/footer
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title home
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='dev/style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick-theme.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(type='text/javascript', src='dev/slick/slick/slick.min.js')
+    script(src='dest/js/slider.js')
+    script(src='dest/js/link.js')
+    script(src='dest/js/page.js')
+    script(src='dest/js/photo.js')
+
+  body
+    +header
+    include ../bem/slider/slider
+    .layout.service
+      .layout
+        .layout_section
+          +service(2,3)
+    .layout
+      .layout_section
+        .project
+          h2.h2 Recent Projects
+          .project_inner
+            +project(1,3)
+            .project_button
+              button.button_page.button_page__active 
+                i.fa.fa-angle-left
+              button.button_page.button_page__active 
+                i.fa.fa-angle-right
+    .layout.clients-wrap._scrollTo
+      .layout_section
+        +clients
+    .layout
+      .layout_section
+          section.blog_home
+            h2.h2 From Blog
+            +blog_home
+    +footer
+    script.
+      $(document).ready(function(){
+      $('.project_inner img').addClass('project_photo__modifier');
+      });

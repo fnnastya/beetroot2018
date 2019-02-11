@@ -1,0 +1,32 @@
+include ../data/projects
+include ../data/footer
+
+include ../bem/page_title/page_title
+include ../bem/project/project
+include ../bem/header/header
+include ../bem/footer/footer
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title project
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='dev/style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='dest/js/link.js')
+    script(src='dest/js/page.js')
+  body
+    +header
+    +page_title('projects')
+    .layout
+        .layout_section
+            .project
+                h2.h2 Recent Projects
+                include ../bem/project_menu/project_menu
+                +project(2,3)
+    +footer
+
+

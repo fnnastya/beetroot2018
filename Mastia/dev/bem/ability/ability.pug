@@ -1,0 +1,62 @@
+mixin ability_item 
+   .ability_item
+      each item in abilityWhoWeAre
+         h2.h2.h2__short=item.header
+         p.ability_text=item.text1
+         p.ability_text=item.text2
+
+mixin abilityWho
+   .layout_section
+      .ability
+         .layout_row
+            .layout_col-2
+               img.ability_img(src='img/ability.png', alt='')
+            .layout_col-2
+               +ability_item 
+               .ability_button
+                  button.button(type='submit') OUR SERVICES
+
+mixin list
+   h2.h2.h2__short Why Choose Us
+   .ability_wrap-list
+      .ability_list._list 
+         button.button.button__dropdown 
+            i.fa.fa-chevron-right
+         p.ability_list-text We are creative
+      .ability_dropdown._dropdown 
+         p.ability_list-text 
+            |As a leader in our industry, we have always worked to 
+            |develop advanced technology and innovative methods.
+      .ability_list._list 
+         button.button.button__dropdown 
+            i.fa.fa-chevron-right
+         p.ability_list-text Proffesional Service
+      .ability_dropdown._dropdown 
+         p.ability_list-text 
+            |As a leader in our industry, we have always worked to 
+            |develop advanced technology and innovative methods.
+      .ability_list._list 
+         button.button.button__dropdown 
+            i.fa.fa-chevron-right
+         p.ability_list-text 15 Years Experience
+      .ability_dropdown._dropdown 
+         p.ability_list-text 
+            |As a leader in our industry, we have always worked to 
+            |develop advanced technology and innovative methods.
+      .ability_list._list 
+         button.button.button__dropdown 
+            i.fa.fa-chevron-right
+         p.ability_list-text Quality Workmanship
+      .ability_dropdown._dropdown 
+         p.ability_list-text 
+            |As a leader in our industry, we have always worked to 
+            |develop advanced technology and innovative methods.
+ 
+mixin abilityWhatWeDo
+   .layout_section
+      .ability
+         .layout_row
+            .layout_col-2
+               +list
+            .layout_col-2
+               +ability_item 

@@ -1,0 +1,36 @@
+include ../data/footer
+
+include ../bem/page_title/page_title
+include ../bem/header/header
+include ../bem/footer/footer
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title contact
+    link(rel='shortcut icon' href='img/favicon.png' type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='dev/style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='dest/js/link.js')
+    script(src='dest/js/page.js')
+  body
+    +header
+    +page_title('contact')
+    .layout
+      .layout_section
+        section.contact
+          h2.h2 Contact Us
+          include ../bem/form/form
+    .layout.map._map
+    script.
+      var map = null;
+      function createMap() {
+      var loc = {lat: 25.652278, lng: 89.856461};
+      map = new google.maps.Map(document.querySelector('._map'), {zoom: 6, center: loc});
+      }
+    //- script(src='js/map.js')
+    +footer
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?callback=createMap')

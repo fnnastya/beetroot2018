@@ -1,0 +1,59 @@
+.header {
+    &_top-wrap {
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+    }
+    &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px auto;
+    }
+    &_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  #fffdfd;
+    padding: 20px 0 15px 0;
+    }
+    &_link:not(:last-child){
+    margin-right: 15px;
+    }
+    &_contact-item {
+    font: 400 14px/24px @fontMariadPro;
+    color:  #353535;
+    margin-right: 40px;
+        &:last-child {
+        margin-right: 0;
+        }
+    }
+    &_icon {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4b4b4b;
+        &__modifier {
+        margin-right: 10px;
+        }
+
+    }
+    &_menu {
+    display: flex;
+    justify-content: space-between;
+    }
+    &_menu-item {
+    font: 400 14px/31px @fontOpenSans;
+    color:  #4b4b4b;
+    text-decoration: none;
+    margin-right:40px;
+    text-transform: uppercase;
+        &:last-child {
+        margin-right: 0;
+        }
+        &:hover {
+        color: @colorAccent;
+        }
+    }
+}
+
+._current {
+    color: @colorAccent;
+}

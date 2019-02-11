@@ -1,0 +1,23 @@
+.page_title-wrap {
+    background-color: @colorAccentWeight;
+}
+
+.page_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.pages{
+    display: flex;
+    justify-content: flex-end;
+    &_item{
+        text-transform: capitalize;
+        font: 400 14px/24px @fontOpenSans;
+        color: @colorModifier;
+        &:not(:last-child){
+            padding-right: 5px;}
+            }
+}

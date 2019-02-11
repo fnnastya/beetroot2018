@@ -1,0 +1,35 @@
+mixin blog
+   section.layout  
+     .layout_section
+       .blog
+        .layout_blog-main
+           +blog_card
+           .blog_pages
+             button.button_page 1
+             button.button_page 2
+             button.button_page.button_page__active 
+              i.fa.fa-angle-right
+        +aside
+
+mixin blog__full
+   section.layout  
+     .layout_section
+       .blog
+        .layout_blog-main
+           +blog_card__full
+
+           +share
+        +aside
+
+mixin blog_home
+  section.blog-inner
+      each blog in blogNews
+        .blog_card
+          img.blog_img(src=blog.img, alt='')
+          .blog-info
+            date.blog-info_date=blog.date
+            .blog-info_text !{blog.text.substr(0,150)} […]
+            form.card_button(method='get', action='full-news.html')
+              button.button.button__home(type='submit') READ MORE
+
+

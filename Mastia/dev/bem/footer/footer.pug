@@ -1,0 +1,45 @@
+mixin footer
+  footer.layout.footer
+    .footer_layer
+      .layout_section
+        .footer_contact
+          h3.h3 GO AHEAD AND FIND OUT HOW WE CAN HELP YOU!
+          button.button.button__modifier GET IN TOUCH
+    .footer_layer.footer_layer__main
+      .layout_section
+        .footer_main
+          .footer_section
+            h4.h4 About Us
+            p.footer_text
+              | Li Europan lingues es membres del sam 
+              br
+              |familie. Lor separat existentie es un myth.
+              br
+              |Por scientie, musica, sport etc, 
+              br
+              |litot Europa usa li sam vocabular. Li
+              br
+              |lingues differe solmen
+          .footer_section
+            h4.h4 Related Links 
+            each item in RelatedLinks
+               a.footer_text(href='#') !{item.category}
+          .footer_section
+            h4.h4 News & Media
+            each item in NewsMedia
+              a.footer_text(href='#') !{item.category}
+          .footer_section
+            h4.h4 Get in touch
+            p.footer_text.footer_text__big 
+              |Lorem Ipsum is simply dummy text of
+              br 
+              |the printing and typesetting industry. 
+              br
+            each item in GetInTouch
+              p.footer_text(href='#') !{item.category}
+    .footer_copyright
+      .layout_section
+        | Made with 
+        span.footer_copyright.footer_copyright__heart
+          i.fa.fa-heart  
+        |  by Revolthemes. All Rights Reserved

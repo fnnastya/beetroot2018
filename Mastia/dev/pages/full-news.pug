@@ -1,0 +1,35 @@
+include ../data/blog
+include ../data/projects
+include ../data/footer
+
+include ../bem/blog/blog
+include ../bem/blog_card/blog_card
+include ../bem/aside/aside
+include ../bem/share/share
+include ../bem/footer/footer
+include ../bem/page_title/page_title
+include ../bem/header/header
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title blog
+    link(rel='shortcut icon' href='img/favicon.png' type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='dev/style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='dest/js/link.js')
+    script(src='dest/js/page.js')
+  body
+    +header
+    +page_title('Blog')
+    +blog__full
+    .layout
+      .layout_section
+        section.contact
+          h2.h2.h2__short Submit a comment
+          include ../bem/form/form
+          input.button(type="submit" value="Submit a comment")
+    +footer

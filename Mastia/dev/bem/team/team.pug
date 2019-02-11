@@ -1,0 +1,12 @@
+mixin team
+   .team
+     .layout_section
+         .team_header
+            h2.h2.h2__short OUR CRAZY TEAM
+         .layout_row
+             each item in ourTeam
+                 .layout_col-4
+                     .team_item
+                        img.team_img(src=item.img, alt='')
+                        h3.team_name=item.name
+                        p.team_position=item.position

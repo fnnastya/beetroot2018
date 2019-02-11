@@ -1,0 +1,20 @@
+.menu {
+    font: 400 14px/1 @fontOpenSans;
+    margin:  20px 15px 50px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    color: #4b4b4b;
+    text-decoration: none;
+        &:hover {
+        border-bottom: 2px solid @colorAccent;
+        }
+}
+
+.menu-item:not(:last-child)::after {
+    display: inline-block;
+    content: '/';
+    margin: 0 35px;
+}

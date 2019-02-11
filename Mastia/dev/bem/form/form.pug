@@ -1,0 +1,32 @@
+form.form(action="#" method="post" name="info_form")
+  .layout_row
+    .layout_col-2
+      input.form_input(type="text" placeholder="First Name" pattern="^[a-zA-Z]+$" required)
+    .layout_col-2
+      input.form_input(type="text" placeholder="Last Name" pattern="^[a-zA-Z]+$" required)
+  .layout_row
+    .layout_col-2
+      .form_field
+        input.form_input(type="email" placeholder="Your E-Mail" required)
+        span.form__error Это поле должно содержать E-Mail в формате example@site.com
+    .layout_col-2
+      .form_field
+        input.form_input(type="url" placeholder="Website" pattern="https://.*" required)
+        span.form__error Это поле должно содержать URL в формате https://site.com
+  textarea.form_textarea(placeholder="Your Message")
+  
+
+
+//- form.form(action="#" method="post" name="info_form")
+//-   .layout_row
+//-     input.form_input(type="text" placeholder="First Name" pattern="^[a-zA-Z]+$" required)
+//-     input.form_input(type="text" placeholder="Last Name" pattern="^[a-zA-Z]+$" required)
+//-   .layout_row
+//-     .form_field
+//-       input.form_input(type="email" placeholder="Your E-Mail" required)
+//-       span.form__error Это поле должно содержать E-Mail в формате example@site.com
+//-     .form_field
+//-       input.form_input(type="url" placeholder="Website" pattern="https://.*" required)
+//-       span.form__error Это поле должно содержать URL в формате https://site.com
+//-   textarea.form_textarea(placeholder="Your Message")
+//-   input.form_button(type="submit" value="send")

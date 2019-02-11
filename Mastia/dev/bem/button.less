@@ -1,0 +1,72 @@
+.button {
+   box-sizing: border-box;
+   background-color: @colorAccent;
+   padding: 15px 30px;
+   border: none;
+   font: 700 14px/14px @fontPlay;
+   color: @colorModifier;
+   cursor: pointer;
+   text-transform: uppercase;
+   &__home {
+    background: transparent;
+    color: @colorAccent;
+   }
+   &__slider {
+      font-weight: 400;
+      color:  @colorModifier;
+      background: transparent;
+      border: 1px solid @colorModifier;
+   }
+   &_share {
+      background-color:  #26a1e4;
+      width: 102px;
+      padding: 10px 0;
+      border: none;
+      color: @colorModifier;
+      cursor: pointer;
+      margin-right: 10px;
+       &__fb {
+         background-color:#2f6ae0;
+       }
+       &__g {
+         background-color:#c73252;
+       }
+       &__inst {
+         background-color:#595959;
+       }
+   }
+   &_page {
+      background: transparent;
+      border-width: 1px;
+      border-color:  #0f80be;
+      border-style: solid;
+      width: 23px;
+      height: 23px;
+      color:  #666666;
+      font: 400 14px @fontReleway;
+      &:not(:last-child){
+         margin-right: 5px;
+      }
+      &__active{
+         background-color: @colorAccent;
+         color: @colorModifier;
+      }
+   }
+      &__modifier {
+        background: transparent;
+        border: 2px solid @colorModifier;;
+    }
+    &__dropdown {
+        width: 62px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        background: transparent;
+        color: @colorAccentWeight;
+        border-right: 1px solid #ebebeb;
+        &__active {
+          background-color: @colorAccent;
+          color: @colorModifier;
+        }
+    }
+}

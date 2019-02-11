@@ -1,0 +1,46 @@
+.footer {
+   font: 400 14px/20px @fontOpenSans;
+   color: @colorModifier;
+   &_layer {
+      background-color: @colorAccent;
+      &__main{
+         background-color:  #161616;
+      }
+   }
+   &_contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 50px 0 50px 20px;
+
+   }
+   &_main {
+      display: flex;
+      justify-content: space-between;
+   }
+   &_section {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0;
+   }
+   &_text{
+      text-decoration: none;
+      margin: 0;
+      color: @colorModifier;
+         &__accent{
+         color: @colorAccent;
+         }
+         &__big {
+            margin-bottom: 20px;
+         }
+   }
+   &_copyright {
+      background-color:  #000000;
+      font-size: 13px;
+      padding: 40px 0;
+      text-align: center;
+      &__heart {
+         color: #ff0000;
+      }
+   }
+}

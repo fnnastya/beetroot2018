@@ -1,0 +1,45 @@
+.ability {
+   padding: 80px 0 70px;
+   position: relative;
+   color: @color;
+   &_item {
+      display: flex;
+      flex-direction: column;
+   }
+   &_img {
+      width: 556px;
+      height: 552px;
+   }
+   &_text {
+      font: 15px/24px @fontOpenSans;
+      margin: 30px 0 0;
+   }
+   &_button {
+      position: absolute;
+      bottom: 75px;
+   }
+   &_wrap-list {
+      margin-top: 30px;
+   }
+   &_list {
+      box-sizing: border-box;
+      border: 1px solid #ebebeb;
+      display: flex;
+      margin-bottom: 10px;
+      cursor: pointer;
+      &__active {
+         background: @color;
+         color: @colorModifier;
+      }
+   }
+   &_list-text {
+      font: 15px/24px @fontOpenSans;
+      padding: 19px;
+    }
+    &_dropdown{
+      display: none;
+      border: 1px solid #ebebeb;
+      margin-bottom: 10px;
+      border-top-color: transparent; 
+    }
+}

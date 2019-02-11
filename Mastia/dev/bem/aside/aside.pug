@@ -1,0 +1,23 @@
+mixin aside
+ aside.layout_aside
+          .aside_searching(action='#')
+            input.aside_input(type='text', placeholder='Searching', name='search')
+            button.aside_search(type='submit')
+              i.fa.fa-search
+          h3.aside_header Recent Posts
+          each post in recentPosts
+            .aside_post
+              img.aside_img(src=post.img, alt='')
+              .aside_text !{post.text}
+          h3.aside_header LATEST PROJECTS
+          .layout_row
+            each item in projectsItems.slice(0,2)
+              a.aside_project(href='#')
+                img.aside_img.aside_img__post(src=item.img, alt='')
+          .layout_row
+            each item in projectsItems.slice(2,4)
+                a.aside_project(href='#')
+                  img.aside_img.aside_img__post(src=item.img, alt='')
+          h3.aside_header Blog Categories
+          each item in blogCategories
+            a.aside_text(href='#') !{item.category}

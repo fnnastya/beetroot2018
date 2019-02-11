@@ -1,0 +1,25 @@
+mixin _service(item)
+    .layout_col-3
+        .service_item
+            .service_icon !{item.icon}
+            h5.service_title=item.title
+            .service_text=item.text
+mixin service(rowNeeded,colNeeded)
+    - var col = 0;
+    - var row = 0;
+    //- - var rowNeeded = serviceItems.length / colNeeded;
+    //- - var rowNeeded = 2;
+    while row < rowNeeded
+        .layout_row
+            while col < (row + 1) * colNeeded
+                +_service(serviceItems[col])
+                - col++;
+        - row++;
+
+mixin service_about
+    each item in serviceItems.slice(6,9)
+        .layout_col-3
+            .service_item
+                .service_icon.service_icon__about !{item.icon}
+                h5.service_title=item.title
+                .service_text.service_text__about= item.text
