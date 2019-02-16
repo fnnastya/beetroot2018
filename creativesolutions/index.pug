@@ -1,0 +1,43 @@
+include data/services
+include bem/service/service
+include bem/about/about
+include bem/header/header
+include bem/footer/footer
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title home
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='style/style.css')
+    link(rel='stylesheet', type='text/css', href='slick/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='slick/slick/slick-theme.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(type='text/javascript', src='slick/slick/slick.min.js')
+    script(src='js/slider.js')
+    script(src='js/scroll.js')
+
+  body
+    section.layout.header_wrap
+      +header
+      include bem/header/header_title
+    .layout
+      .layout_section
+        #about.about
+          +about
+    .layout#service.service
+      .layout
+        .layout_section
+          +service(2,3)
+    include bem/works/works
+    .layout.map
+      .layout
+        .layout_section
+          .map_wrap
+            img.map_icon(src='img/Layer 7.png', alt='')
+            .map_title get in touch
+          include bem/form/form
+    +footer
