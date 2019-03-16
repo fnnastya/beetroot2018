@@ -1,0 +1,242 @@
+body {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
+}
+
+.layout {
+	padding: 0 40px;
+}
+
+.reg-form {
+	background-color:  #ffffff;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	width: 400px;
+	height: 640px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.title {
+	font: 700 24px/18px 'Roboto', sans-serif;
+	color:  #333333;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 42px 0 0 0;
+	&_after {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 20px 0 35px 0;
+	}
+}
+
+.line{
+	background-image: linear-gradient(left, transparent 0%, #aaaaaa 25%, #aaaaaa 100%);
+	width: 148px;
+	height: 1px;
+	margin: auto 0;
+	&__modifier {
+		background-image: linear-gradient(right, transparent 0%, #aaaaaa 25%, #aaaaaa 100%);
+	}
+}
+.circle {
+	content: '';
+	border-radius: 50%;
+	border-width: solid 1px #aaaaaa;
+	background-color: #aaaaaa;
+	width: 5px;
+	height: 5px;
+	margin: 0 5px;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.radio {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: 37px;
+}
+
+.form {
+	&_caption {
+		font: 400 14px/18px 'Roboto', sans-serif;
+		color: #f89921;
+		text-align: left;
+		width: 120px;
+	}
+	&_input {
+		height: 37px;
+		border: none;
+		border-bottom: solid 1px #aaaaaa;
+		box-sizing: border-box;
+		width: 100%;
+		font: 400 14px/18px 'Roboto', sans-serif;
+		color: #333333;
+		&__modifier {
+			display: none;
+		}
+	}
+	&_text {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 35px;
+		position: relative;
+	}
+}
+
+.location {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	&_text {
+		font: 400 12px/18px 'Roboto', sans-serif;
+		color:  #999999;
+	}
+}
+
+.fa-map-marker-alt {
+	margin-right: 10px;
+}
+
+.fas,.far {
+	color: #999999;
+}
+
+.footer {
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 170px;
+	&_text {
+		font: 400 12px/18px 'Roboto', sans-serif;
+		color: #999999;
+		margin-top: 25px;
+		text-align: center;
+		&__color {
+			color: #f89921;
+			text-decoration: underline;
+		}
+	}
+}
+
+.submit {
+	border: none;
+	border-radius: 3px;
+	background-color:  #f89921;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+	width: 100%;
+	height: 40px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+//       radio button          
+#radio:checked + .icon {
+	color: #f89921;
+		&::after {
+		border-color: #f89921;
+	}
+}
+
+.icon {
+	font-size: 20px;
+	text-align: center;
+	&::after {
+		content:'';
+		border-bottom: 1px solid #999999;
+		width: 40px;
+		display: block;
+		height: 15px;
+	}
+}
+
+label {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//          select          
+select {
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.select {
+	display: inline-block;
+	height: 37px;
+	position: relative;
+	width: 100%;
+	font: 400 14px/18px 'Roboto', sans-serif;
+	color: #333333;
+}
+
+.select::after {
+	content: '';
+}
+
+// ---------------------------------------
+
+.tooltip {
+	visibility: hidden;
+	width: 190px;
+	background-color: #ff3000;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	font: 400 12px/18px 'Roboto', sans-serif;
+	color:  #ffffff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	left: 105%;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 100%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent #ff3000 transparent transparent;
+	}
+	&__modifier {
+	color: #333333;
+	background-color: #ffffff;
+	&::after {
+		border-color: transparent #ffffff transparent transparent;
+	}
+	}
+}
+
+.ok{
+	border-bottom: 1px solid green;
+}
+.error{
+	border-bottom: 1px solid red;
+}
+

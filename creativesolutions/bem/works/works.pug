@@ -1,12 +1,16 @@
 section.layout.works-wrap
   .layout
     .layout_section
-        #works.works-slider
+        #works.works
           img.slider_icon(src='img/Icon-Works.png', alt='')
           h3.h3 recent works
-          .slider
+          button.button.button__slider._prewArrow.slider_arrow-prev
+            i.fa.fa-chevron-left
+          .slider_works._slider_works
             img.slider_img(src='img/work.jpg', alt='')
             img.slider_img(src='img/work.jpg', alt='')
             img.slider_img(src='img/work.jpg', alt='')
-        form.form(method='get', action='blog.html')
-          button.form_button.form_button__modifier(type='submit') View Gallery
+          button.button.button__slider._nextArrow.slider_arrow-next
+            i.fa.fa-chevron-right
+        form.form-button(method='get', action='blog.html')
+          button.button.button__modifier(type='submit') View Gallery

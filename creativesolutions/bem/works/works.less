@@ -1,26 +1,36 @@
 .works-wrap {
-  background-image: url("../img/works.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: @color;
-  position: relative;
-  }
-
-.works-slider {
-  padding-top: 50px;
-}
-
+    background-image: url("../img/works.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: @color;
+    position: relative;
+    }
 
 .slider {
-	&_icon {
-	width: 40px;
-	height: 60px;
-	margin: auto;
+    &_works {
+    width: 730px;
+    margin: auto;
+    }
+    &_icon {
+    width: 40px;
+    height: 60px;
+    margin: auto;
     display: block;
-	}
-	&_img {
-	width: 730px;
-	height: 546px;
-	margin-top: 70px;
-	}
+    padding: 50px 0 40px 0;
+    }
+    &_img {
+    width: 730px;
+    height: 546px;
+    margin: 70px 0 45px 0;
+    }
+    &_arrow-next {
+    position: absolute;
+    right: 50px;
+    top: calc(50% - 60px);
+    }
+    &_arrow-prev {
+    position: absolute;
+    left: 50px;
+    top: calc(50% - 60px);
+    }
 }

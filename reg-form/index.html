@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reg-form-task</title>
+	<link rel="shortcut icon" href="img/form.png" type="image/x-icon">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<section class="reg-form">
+		<h1 class="title">sign up for free!</h1>
+		<div class="title_after">
+			<div class="line"></div><div class="circle"></div><div class="line line__modifier"></div>
+		</div>
+		<main class="main layout">
+			<form class="form" action="#" method="post" name="reg_form">
+				<div class="row">
+					<div class="form_caption">I am</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="person" id="radio" value="1" class="form_input form_input__modifier" checked>
+							<i class="fas fa-mars icon"></i>
+						</label>
+						<label>
+							<input type="radio" name="person" id="radio" value="2" class="form_input form_input__modifier">
+							<i class="fas fa-venus icon"></i>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form_caption">Year of birth</div>
+					<label class="_select select">
+						<select class="form_input" id='select'> <!-- to do js -->
+							<option value="">2019</option>
+							<option value="">2017</option>
+							<option value="">2016</option>
+							<option value="">2015</option>
+							<option value="">2014</option>
+							<option value="">2013</option>
+							<option value="">2012</option>
+							<option value="">2011</option>
+							<option value="">2010</option>
+							<option value="">2009</option>
+							<option value="">2008</option>
+							<option value="">2007</option>
+							<option value="">2006</option>
+							<option value="">2005</option>
+							<option value="">2004</option>
+							<option value="">2003</option>
+							<option value="">2002</option>
+							<option value="">2001</option>
+							<option value="">2000</option>
+						</select>
+						<div class="select_value _selectValue"></div><span class="tooltip tooltip-select"></span>
+					</label>
+				</div>
+				<div class="row">
+					<div class="form_caption">Email</div>
+					<input type="email" name="mail" id="mail" class="form_input" placeholder="" required>
+					<span class="tooltip tooltip-mail"></span>
+				</div>
+				<div class="row">
+					<div class="form_caption">Password</div>
+					<input type="password" name="password" id="password" class="form_input" placeholder="" required>
+					<span class="tooltip tooltip-password"></span>
+				</div>
+				<div class="row">
+					<div class="form_caption">Postal Code</div>
+					<input type="number" name="code" id="code" class="form_input field" pattern="[0-9]{5}" required>
+					<span class="tooltip tooltip-code"></span>
+				</div>
+				<div class="form_text">
+					<div class="location">
+						<i class="fas fa-map-marker-alt"></i>
+						<div class="location_text">E.g. Berlin or 10432</div>
+					</div>
+					<i class="far fa-question-circle"></i><span class="tooltip tooltip__modifier tooltip-info"></span>
+				</div>
+			</form>
+		</main>
+		<footer class="footer layout">
+			<input type="submit" onclick="" name="submit" id="submit" class="submit" value="Register now!">
+			<div class="footer_text">By clicking the button above you agree to our 
+				<span class="footer_text footer_text__color">Terms of Use</span> and 
+				<span class="footer_text footer_text__color">Privacy Policy</span> including use of cookies</div>
+		</footer>
+	</section>
+</body>
+</html>

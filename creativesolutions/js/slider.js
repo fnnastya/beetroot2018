@@ -1,5 +1,5 @@
     $(document).ready(function(){
-      $('.slider').slick({
+      $('._slider_works').slick({
         arrows: true,
         nextArrow: '._nextArrow',
         prevArrow: '._prevArrow',
