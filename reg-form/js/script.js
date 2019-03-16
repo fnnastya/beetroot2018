@@ -102,10 +102,12 @@ $(document).ready(function(){
 	});
 
 //    tooltip-info
-	$('.fa-question-circle').hover(function(){
-	$('.tooltip-info').css('visibility','visible');
-	$('.tooltip-info').text('We don`t use postal codes to cantact members directly');
+	$(function(){
+		$('.fa-question-circle').hover(function(){
+		$('.tooltip-info').css('visibility','visible');
+		$('.tooltip-info').text('We don`t use postal codes to cantact members directly');
 	},
 	function(){
-	$('.tooltip-info').css('visibility','hidden');
+		$('.tooltip-info').css('visibility','hidden');
 	});
+});
