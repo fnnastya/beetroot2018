@@ -100,6 +100,16 @@ $(document).ready(function(){
 	});
 	$('select').on('change', function(){
 	});
+	$(function(){
+		var today = new Date()
+		var yearToday = today.getFullYear();
+		for (var year=1990 ; year < yearToday+1; year++) {
+			$('#select').append($('<option>', {
+			value: year,
+			text: year
+			}));
+		};
+	})
 
 //    tooltip-info
 	$(function(){
