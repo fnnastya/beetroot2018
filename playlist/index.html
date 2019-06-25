@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>songs</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://alexcss.github.io/playlist/css/style.css">
+</head>
+<body>
+	<main>
+		<div class="ba-container">
+			<div class="ba-playlist">
+				<h3 class="ba-playlist__title">PlayList</h3>
+				<ul class="ba-playlist__list" id="playlist">
+<script id="playlist-li" type="text/javascript">
+	var playList = [{
+			author: "led zeppelin",
+			song: "stairway to heaven",
+			duration: "2:03"
+		},
+		{
+			author: "queen",
+			song: "bohemian rhapsody",
+			duration: "2:30"
+		},
+		{
+			author: "lynyrd skynyrd",
+			song: "free bird",
+			duration: "1:56"
+		},
+		{
+			author: "deep purple",
+			song: "smoke on the water",
+			duration: "3:03"
+		},
+		{
+			author: "jimi hendrix",
+			song: "all along the watchtower",
+			duration: "2:53"
+		},
+		{
+			author: "AC/DC",
+			song: "back in black",
+			duration: "2:43"
+		},
+		{
+			author: "queen",
+			song: "we will rock you",
+			duration: "2:13"			
+		},
+		{
+			author: "metallica",
+			song: "enter sandman",
+			duration: "3:03"			
+		}
+	];
+	// виртуальнй фрагмент 
+	var frag = document.createDocumentFragment();
+	
+playList.forEach(function (item) {
+	var li = document.createElement('li');
+	var divTop = document.createElement('div');
+	var divSong = document.createElement('div');
+	var spanDuration = document.createElement('span');
+	var spanAuthor = document.createElement('span');
+
+	li.classList.add('ba-tune');
+	divTop.classList.add('ba-tune__top');
+	divSong.classList.add('ba-tune__song');
+	spanDuration.classList.add('ba-tune__duration');
+	spanAuthor.classList.add('ba-tune__author');
+
+	li.appendChild(divTop);
+	divTop.appendChild(spanDuration);
+	divTop.appendChild(spanAuthor);
+	li.appendChild(divSong);
+
+	spanDuration.innerText = item.duration;
+	spanAuthor.innerText = item.author;
+	divSong.innerText = item.song;
+
+	frag.appendChild(li);
+})
+
+	document.querySelector('#playlist').appendChild(frag);
+
+</script>
+		</div>
+	</main>
+</body>
+</html>
